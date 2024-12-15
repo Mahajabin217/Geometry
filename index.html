@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Website</title>
+
+    <!--------- Daisy UI Link ------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <main>
+
+            <!-------- Main Content Container ------->
+            <div class="flex flex-col md:flex-row">
+                <!----- Shape Card Area ------->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-------- Triangle Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/triangle.png" alt="shape" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Triangle</h2>
+                            <p>Area(A) = 0.5 x b x h</p>
+                            <div>
+                                <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text"
+                                    placeholder="b">
+                                <span>cm</span>
+                                <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" type="text"
+                                    placeholder="h">
+                                <span>cm</span>
+                            </div>
+                            <div>
+                                <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm <sup>2</sup></span>
+                                </p>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- Rectangle Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/rectangle.png" alt="shape" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Reactangle</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- Parallelogram Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/parallelogram.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- Pentagon Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/pentagon.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- Ellipse Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/ellipse.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- Rhombus Card-->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                            <img src="./geometry-genius-resources-main/images/rhombus.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------- Area Calculation Area -------->
+                <div class="w-96 border-2 border-gray-700 rounded-md">
+                    <h3 class="text-3xl text-center">Area Calculation</h3>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <!--------- JS File -------->
+    <script src="calculate.js"></script>
+</body>
+
+</html>
