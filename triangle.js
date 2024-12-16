@@ -1,4 +1,4 @@
-// Triangle base & height:
+// Triangle base & height calculation:
 
 function calculateTriangle() {
     //console.log('kaj krse');
